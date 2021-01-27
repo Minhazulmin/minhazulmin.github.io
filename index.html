@@ -1,19 +1,689 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>pre loader</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-		
-		<div class="square">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
+	<head>
+		<title>Web Design Basic Course</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML, CSS, JavaScript,tutorials">
+		<meta name="author" content="MIN IT">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<link rel="stylesheet" type="text/css" href="css/style2.css">
+		<!-- Bootstrap 5 setup -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!--for icon -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- aos js effect css  -->
+		<link href="css/aos.css" rel="stylesheet">
+		<!-- for top clock -->
+		<script src="js/clock.js"></script>
+	</head>
+	<body onload="myloader()">
+		<!-- loader -->
+		<div id="loader">
+			<div class="square">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="logo">
+				<span><img src="images/logo2.png"></span>
+			</div>
 		</div>
-		<div class="logo">
-			<span><img src="images/logo.png"></span>
+ 		 <!-- header part -->
+		<div class="container-fluid hadder">
+			
+			<div class="row justify-content-md-center">
+				<ul class="top_info">
+					<li class="space">
+						<div>
+							<i class="fa fa-phone"></i> For Help
+						</div>
+					</li>
+					<li class="space">
+						<div>
+							<i class="fa fa-phone"></i> 01751337061
+						</div>
+					</li>
+					<li class="space">
+						<div>
+							<i class="fa fa-envelope-o"></i> E-mail: minhazul234@gmail.com
+						</div>
+					</li>
+					<li class="space">
+						<div>
+							<div id="clockbox"></div>
+						</div>
+					</li>
+					<li class="space">
+						<div>
+							<i class="fa fa-sign-in"></i> REGISTER OR LOGIN
+						</div>
+					</li>
+				</ul>
+				
+			</div>
 		</div>
-</body>
+
+		<!-- Responsive menu part -->
+		<nav class="navbar navbar-expand-lg navbar-light bg_menu">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="images/logo.png" class="img_size"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto ">
+						<li class="nav-item ">
+							<a class="nav-link menu_text_color" href="#"><i class="fa fa-home"></i>Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link menu_text_color" href="#"><i class="fa fa-fw fa-user"></i> Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link menu_text_color" href="#"><i class="fa fa-newspaper-o"></i> News</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle menu_text_color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i>
+								Services
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link menu_text_color" href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+						</li>
+					</ul>
+					<!-- <form class="form-inline my-2 my-lg-0">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form> -->
+				</div>
+			</div>
+		</nav>
+
+		<!-- Responsive Slider part -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li><li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+			
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/slider_one.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/slider_two.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/slider_three.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/slider_four.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/slider_five.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/slider_six.jpg" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<!-- set for animation -->
+		<div data-aos="fade-up" data-aos-duration="2000">
+			<!-- set title of containt -->
+			<div class="container mt-5">
+					<div class="col mt-3">
+						<center>
+							<h2>Welcome to MIN IT E-Learning Services</h2>
+							<p>MIN IT - It is E-Learing web platform and you will learn web Design and Development,Graphic Design,Digital marketing,Etc</p>
+						</center>
+					</div>
+				<hr class="hr">
+			</div>
+		</div>
+
+		<!-- set for animation -->
+		<div data-aos="fade-up" data-aos-duration="3000">
+			<!--.services Design...-->
+			<div class="container">
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+				  	<div class="col-md-3 mt-3">
+					    <div class="card h-100">
+					      <center><img src="images/web_design.jpg" class=" card-img-top image_size" alt="...">
+					      <div class="card-body">
+					        <h5 class="card-title">WEB DESIGN </h5>
+					        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+					      </div></center>
+					    </div>
+					</div>
+
+					<div class="col-md-3 mt-3">
+					    <div class="card h-100">
+					      <center><img src="images/graphic_design.jpg" class="card-img-top image_size rradius" alt="...">
+					      <div class="card-body">
+					        <h5 class="card-title">Graphics Design</h5>
+					        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+					      </div></center>
+					    </div>
+					</div>
+					<div class="col-md-3 mt-3">
+					    <div class="card h-100">
+					      <center><img src="images/seo.png" class="card-img-top image_size rradius" alt="...">
+					      <div class="card-body">
+					        <h5 class="card-title"><center>SEO</center> </h5>
+					        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+					      </div></center>
+					    </div>
+					</div>
+				  	<div class="col-md-3 mt-3">
+				    	<div class="card h-100">
+				      <center><img src="images/digtal.png" class="card-img-top image_size rradius" alt="...">
+				      <div class="card-body">
+				        <h5 class="card-title">Digital Marketing</h5>
+				        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				      </div>
+				    	</div></center>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<!-- set for animation -->
+		<div data-aos="slide-down" data-aos-duration="3000">
+			<!-- Course Title -->
+			<div class="container mt-6">
+					<div class="col mt-3">
+						<center>
+							<h2>Popular Online Courses</h2>
+						</center>
+					</div>
+				<hr class="hr">
+			</div>
+		</div>	
+
+		<!-- set for animation -->	
+		<div data-aos="fade-up" data-aos-duration="3000">
+			<!-- Course Design -->
+			<div class="container">
+				<div id="myBtnContainer">
+				  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+				  
+				  <button class="btn" onclick="filterSelection('Web_Design_Development')"> Web Design & Development</button>
+				  <button class="btn" onclick="filterSelection('graphic_design')"> Graphic Design</button>
+				  <button class="btn" onclick="filterSelection('Digital_marketing')"> Digital Marketing</button>
+				  <button class="btn" onclick="filterSelection('seo')">SEO</button>
+				  <button class="btn" onclick="filterSelection('Programming')">Programming</button>
+				</div>
+				<hr class="hr">
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+
+					<!-- Web_Design_Development CATEGORY -->
+		  			<div class="column Web_Design_Development">
+		  				<!-- 1st -->
+					    <div class="content">
+					      	<div class="card">
+								<div class="" ><img src="images/lar_vue.jpg" class="course_image" alt=""></div>
+								<div class="card-body">
+									<h3 class=""><a href="">Laravel with Vue.js</a></h3>
+									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
+									<div class=""><p>In this course you will learn about Laravel and Vue.js</p></div>
+								</div>
+								<div class="card-footer">
+									<div class="d-flex flex-row align-items-center justify-content-start">
+										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
+										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
+										<div class=" price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+					    </div>
+		  			</div>
+		  			<div class="column Web_Design_Development">
+		  				<!-- 2nd -->
+					    <div class="content">
+					      	<div class="card ">
+								<div class="" ><img src="images/laravel.png" class="course_image" alt=""></div>
+								<div class="card-body">
+									<h3 class=""><a href="">Laravel Basic</a></h3>
+									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
+									<div class=""><p>In this course you will learn about Laravel and Vue.js</p></div>
+								</div>
+								<div class="card-footer">
+									<div class="d-flex flex-row align-items-center justify-content-start">
+										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
+										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
+										<div class=" price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+					    </div>
+		  			</div>
+				
+					<!-- graphic_design CATEGORY -->
+					<div class="column graphic_design">
+						<!-- 1ST -->
+					    <div class="content">
+					      <div class="card ">
+								<div class="" ><img src="images/ad_pto.jpg" class="course_image" alt=""></div>
+								<div class="card-body">
+									<h3 class=""><a href="">Adobe Photoshop</a></h3>
+									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
+									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
+								</div>
+								<div class="card-footer">
+									<div class="d-flex flex-row align-items-center justify-content-start">
+										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
+										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
+										<div class=" price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+					<div class="column graphic_design">
+						<!-- 2nd-->
+					    <div class="content">
+					      <div class="card ">
+								<div class="" ><img src="images/ai.jpeg" class="course_image" alt=""></div>
+								<div class="card-body">
+									<h3 class=""><a href="">Adobe illustrator</a></h3>
+									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
+									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
+								</div>
+								<div class="card-footer">
+									<div class="d-flex flex-row align-items-center justify-content-start">
+										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
+										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
+										<div class=" price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+					 
+					<!-- Digital_marketing category -->
+					<div class="column Digital_marketing">
+						<!-- 1st -->
+					    <div class="content">
+					     <div class="card ">
+								<div class="" ><img src="images/dig_market.png" class="course_image" alt=""></div>
+								<div class="card-body">
+									<h3 class=""><a href="">Software Training</a></h3>
+									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
+									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
+								</div>
+								<div class="card-footer">
+									<div class="d-flex flex-row align-items-center justify-content-start">
+										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
+										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
+										<div class=" price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+					<div class="column Digital_marketing">
+						<!-- 2nd -->
+					    <div class="content">
+					     <div class="card">
+								<div class="" ><img src="images/dig_market2.jpg" class="course_image" alt=""></div>
+								<div class="card-body">
+									<h3 class=""><a href="">Software Training</a></h3>
+									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
+									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
+								</div>
+								<div class="card-footer">
+									<div class="d-flex flex-row align-items-center justify-content-start">
+										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
+										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
+										<div class=" price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+
+					<!-- SEO category -->
+					<div class="column seo">
+						<!-- 1st -->
+					    <div class="content">
+					     <div class="card">
+								<div class="" ><img src="images/seo.png" class="course_image" alt=""></div>
+								<div class="card-body">
+									<h3 class=""><a href="">Software Training</a></h3>
+									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
+									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
+								</div>
+								<div class="card-footer">
+									<div class="d-flex flex-row align-items-center justify-content-start">
+										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
+										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
+										<div class=" price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+					<div class="column seo">
+						<!-- 2nd -->
+					    <div class="content">
+					     <div class="card">
+								<div class="" ><img src="images/seo2.jpg" class="course_image" alt=""></div>
+								<div class="card-body">
+									<h3 class=""><a href="">Software Training</a></h3>
+									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
+									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
+								</div>
+								<div class="card-footer">
+									<div class="d-flex flex-row align-items-center justify-content-start">
+										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
+										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
+										<div class=" price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+
+					<!-- Programming category -->
+					<div class="column Programming">
+						<!-- 1st -->
+					    <div class="content">
+					     <div class="card ">
+								<div class="" ><img src="images/c.jpg" class="course_image" alt=""></div>
+								<div class="card-body">
+									<h3 class=""><a href="">Software Training</a></h3>
+									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
+									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
+								</div>
+								<div class="card-footer">
+									<div class="d-flex flex-row align-items-center justify-content-start">
+										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
+										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
+										<div class=" price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<!-- set for animation -->
+		<div data-aos="slide-down" data-aos-duration="3000">
+			<!-- Latest News Title -->
+			<div class="container mt-6">
+					<div class="col mt-3">
+						<center>
+							<h2>Latest News</h2>
+							<p>Policy analysts generally agree on a need for reform, but not on which path policymakers should take.</p>
+						</center>
+					</div>
+				<hr class="hr">
+			</div>
+		</div>
+
+
+		<!-- set for animation -->
+		<div data-aos="slide-up" data-aos-duration="3000">
+		<!-- Latest News -->
+
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-md-7 ">
+						
+						<!-- News Post Large -->
+							<div class="">
+								<img src="images/lar_vue.jpg" class="course_image post_image" alt=""></div>
+								<div class="post_title"><a href="blog_single.html">Here’s What You Need to Know About Online Testing for the ACT and SAT</a></div>
+								<div class="p_admin_date">
+									<ul>
+										<li><a href="#">admin</a></li> 
+										<li><a href="#" class="ml-3 mr-3">|</a></li> 
+										<li><a href="#">november 11, 2021</a></li>
+									</ul>
+								</div>
+								<div class="description">
+									<p>Policy analysts generally agree on a need for reform, but not on which path policymakers should take. Can America learn anything from other nations...</p>
+								</div>
+								<div class="readmore"><a href="">Read more</a></div>
+					</div>
+
+					<div class="col-md-5">
+
+							<!-- News Posts Small -->
+							<div class="">
+								<div class="post_small_title"><a href="blog_single.html">Home-based business insurance issue (Spring 2020 - 2021)</a></div>
+								<div class="p_admin_date">
+									<ul>
+										<li><a href="#">admin</a></li>
+										<li><a href="#" class="ml-3 mr-3">|</a></li>
+										<li><a href="#">november 11, 2021</a></li>
+									</ul>
+								</div>
+							</div><hr>
+
+							<!-- News Posts Small -->
+							<div class="">
+								<div class="post_small_title"><a href="blog_single.html">2018 Fall Issue: Credit Card Comparison Site Survey (Summer 2018)</a></div>
+								<div class="p_admin_date">
+									<ul>
+										<li><a href="#">admin</a></li>
+										<li><a href="#" class="ml-3 mr-3">|</a></li>
+										<li><a href="#">november 11, 2021</a></li>
+									</ul>
+								</div>
+							</div><hr>
+
+							<!-- News Posts Small -->
+							<div class="">
+								<div class="post_small_title"><a href="blog_single.html">Cuentas de cheques gratuitas una encuesta de Consumer Action</a></div>
+								<div class="p_admin_date">
+									<ul>
+										<li><a href="#">admin</a></li>
+										<li><a href="#" class="ml-3 mr-3">|</a></li>
+										<li><a href="#">november 11, 2021</a></li>
+									</ul>
+								</div>
+							</div><hr>
+
+							<!-- News Posts Small -->
+							<div class="">
+								<div class="post_small_title"><a href="blog_single.html">Troubled borrowers have fewer repayment or forgiveness options</a></div>
+								<div class="p_admin_date">
+									<ul>
+										<li><a href="#">admin</a></li>
+										<li><a href="#" class="ml-3 mr-3">|</a></li>
+										<li><a href="#">november 11, 2021</a></li>
+									</ul>
+								</div>
+							</div>			
+					</div>
+				</div>
+			</div>
+	
+		</div>
+
+
+		<!-- Best Tutor profile title -->
+		<div class="container mt-6">
+				<div class="col mt-3">
+					<center>
+						<h2>The Best Tutors in our Institute</h2>
+					</center>
+				</div>
+			<hr class="hr">
+		</div>
+		<!-- Best Tutor profile List -->
+		<div class="container">
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col-md-3">
+					<center>
+					<div class="card">
+						<center><img src="images/min.jpg" class=" image_size rradius"></center>
+						  <h4 class="mt-3">Minhazul Islam</h4>
+						  <p>CEO & Founder</p>
+						  <p>MIN IT SERVICES</p>
+						  <div style="margin: 24px 0;">
+						    <a href="#"><i class="fa fa-dribbble"></i></a> 
+						    <a href="#"><i class="fa fa-twitter"></i></a>  
+						    <a href="#"><i class="fa fa-linkedin"></i></a>  
+						    <a href="#"><i class="fa fa-facebook"></i></a> 
+						  </div>
+						  <button class=" form-control btn btn-info">Contact</button>
+					</div></center>
+				</div>
+				<div class="col-md-3">
+					<center>
+					<div class="card">
+						<center><img src="images/profile-2.jpg" class=" image_size rradius"></center>
+						  <h4 class="mt-3">Ana Islam</h4>
+						  <p>CEO & Founder</p>
+						  <p>MIN IT SERVICES</p>
+						  <div style="margin: 24px 0;">
+						    <a href="#"><i class="fa fa-dribbble"></i></a> 
+						    <a href="#"><i class="fa fa-twitter"></i></a>  
+						    <a href="#"><i class="fa fa-linkedin"></i></a>  
+						    <a href="#"><i class="fa fa-facebook"></i></a> 
+						  </div>
+						  <button class=" form-control btn btn-info">Contact</button>
+					</div></center>
+				</div>
+				<div class="col-md-3">
+					<center>
+					<div class="card">
+						<center><img src="images/profile-3.jpg" class=" image_size rradius"></center>
+						  <h4 class="mt-3">Bornoma </h4>
+						  <p>CEO & Founder</p>
+						  <p>MIN IT SERVICES</p>
+						  <div style="margin: 24px 0;">
+						    <a href="#"><i class="fa fa-dribbble"></i></a> 
+						    <a href="#"><i class="fa fa-twitter"></i></a>  
+						    <a href="#"><i class="fa fa-linkedin"></i></a>  
+						    <a href="#"><i class="fa fa-facebook"></i></a> 
+						  </div>
+						  <button class=" form-control btn btn-info">Contact</button>
+					</div></center>
+				</div>
+				<div class="col-md-3">
+					<center>
+					<div class="card">
+						<center><img src="images/profile-4.png" class=" image_size rradius"></center>
+						  <h4 class="mt-3">Sara Islam</h4>
+						  <p>CEO & Founder</p>
+						  <p>MIN IT SERVICES</p>
+						  <div style="margin: 24px 0;">
+						    <a href="#"><i class="fa fa-dribbble"></i></a> 
+						    <a href="#"><i class="fa fa-twitter"></i></a>  
+						    <a href="#"><i class="fa fa-linkedin"></i></a>  
+						    <a href="#"><i class="fa fa-facebook"></i></a> 
+						  </div>
+						  <button class=" form-control btn btn-info">Contact</button>
+					</div></center>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- footer Design -->
+		 <hr />
+        <footer class="bg_menu ">
+                <div class="container mshadow">
+                	<div class="row">
+                		<div class="col-md-3 padding">
+                			<h5>Usefull Link</h5>
+                			<hr style="border-color: #fff;">
+                            <h6>Paid Course</h6>
+                            <h6>Affiliate Program </h6>
+                            <h6>Tutorials</h6>
+                            <h6>Sponsorship </h6>
+                            <h6> Our Team</h6>
+                		</div>
+                		<div class="col-md-3 padding">
+                			<h5 >Services</h5>
+                			<hr style="border-color: #fff;">
+                            <h6>Web Design and Development</h6>
+                            <h6>Graphic Design</h6>
+                            <h6>Digital Marketing </h6>
+                            <h6>UI/UX Design</h6>
+                            <h6>SEO</h6>
+                		</div>
+                		<div class="col-md-3 padding">
+                			<h5>Contact Us</h5>
+                			<hr style="border-color: #fff;">
+                            <h6>MIN IT </h6>
+                            <h6>CEO, Founder & Director</h6>
+                            <h6>MD.MINHAZUL ISLAM MIN </h6>
+                            <h6>🌎 minhazul234@gmail.com</h6>
+                            <h6>📞 +8801751337061</h6>
+                		</div>
+                		<div class="col-md-3 padding">
+                			<center>
+                				<h5>Join With Us</h5>
+                				<hr style="border-color: #fff;">
+		                		<div class="mt-3">
+					 				<a href="#" class="fa fa-facebook socal mshadow"></a>
+									<a href="#" class="fa fa-twitter socal mshadow"></a>
+									<a href="#" class="fa fa-linkedin socal mshadow"></a>
+									<a href="#" class="fa fa-youtube socal mshadow"></a>
+									<a href="#" class="fa fa-instagram socal mshadow"></a>
+				 				</div>
+			 				</center>
+			 				<div class="mt-3">
+			 					<input type="email" class="form-control" style="width: 65%;float: left;" name="email" required>
+                					<button class="btn btn-success" style="width: 35%;">Subscribe</button>
+			 				</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="">
+					<p>
+				       <center>Copyright &copy; 2017 - 2021 By<i class="fa fa-heart red ml-2"></i> MIN IT<i class="fa fa-heart red ml-2"></i> All Rights Reserved</center>
+				    </p>
+				</div>
+        </footer>
+          
+         <script>
+         	function myloader()
+         	{
+         		setTimeout(function(){ document.getElementById("loader").style.display="none";},4000);
+         	}
+         </script>
+        <script src="js/course.js"></script>
+		<script src="js/jquery-3.5.1.slim.min.js" ></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- aos js for effect or animation  -->
+		<script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+	</body>
 </html>
