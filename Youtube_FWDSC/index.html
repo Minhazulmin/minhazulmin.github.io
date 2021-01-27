@@ -18,7 +18,19 @@
 		<!-- for top clock -->
 		<script src="js/clock.js"></script>
 	</head>
-	<body>
+	<body onload="myloader()">
+		<!-- loader -->
+		<div id="loader">
+			<div class="square">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="logo">
+				<span><img src="images/logo2.png"></span>
+			</div>
+		</div>
  		 <!-- header part -->
 		<div class="container-fluid hadder">
 			
@@ -655,7 +667,13 @@
 				    </p>
 				</div>
         </footer>
-           
+          
+         <script>
+         	function myloader()
+         	{
+         		setTimeout(function(){ document.getElementById("loader").style.display="none";},4000);
+         	}
+         </script>
         <script src="js/course.js"></script>
 		<script src="js/jquery-3.5.1.slim.min.js" ></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
@@ -666,5 +684,6 @@
   <script>
     AOS.init();
   </script>
+  
 	</body>
 </html>
