@@ -1,689 +1,706 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Web Design Basic Course</title>
-		<meta charset="UTF-8">
-		<meta name="description" content="Free Web tutorials">
-		<meta name="keywords" content="HTML, CSS, JavaScript,tutorials">
-		<meta name="author" content="MIN IT">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/png" href="images/logo.png">
-		<link rel="stylesheet" type="text/css" href="css/style2.css">
-		<!-- Bootstrap 5 setup -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!--for icon -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- aos js effect css  -->
-		<link href="css/aos.css" rel="stylesheet">
-		<!-- for top clock -->
-		<script src="js/clock.js"></script>
-	</head>
-	<body onload="myloader()">
-		<!-- loader -->
-		<div id="loader">
-			<div class="square">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="logo">
-				<span><img src="images/logo2.png"></span>
-			</div>
-		</div>
- 		 <!-- header part -->
-		<div class="container-fluid hadder">
-			
-			<div class="row justify-content-md-center">
-				<ul class="top_info">
-					<li class="space">
-						<div>
-							<i class="fa fa-phone"></i> For Help
-						</div>
-					</li>
-					<li class="space">
-						<div>
-							<i class="fa fa-phone"></i> 01751337061
-						</div>
-					</li>
-					<li class="space">
-						<div>
-							<i class="fa fa-envelope-o"></i> E-mail: minhazul234@gmail.com
-						</div>
-					</li>
-					<li class="space">
-						<div>
-							<div id="clockbox"></div>
-						</div>
-					</li>
-					<li class="space">
-						<div>
-							<i class="fa fa-sign-in"></i> REGISTER OR LOGIN
-						</div>
-					</li>
-				</ul>
-				
-			</div>
-		</div>
 
-		<!-- Responsive menu part -->
-		<nav class="navbar navbar-expand-lg navbar-light bg_menu">
-			<div class="container">
-				<a class="navbar-brand" href="#"><img src="images/logo.png" class="img_size"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto ">
-						<li class="nav-item ">
-							<a class="nav-link menu_text_color" href="#"><i class="fa fa-home"></i>Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link menu_text_color" href="#"><i class="fa fa-fw fa-user"></i> Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link menu_text_color" href="#"><i class="fa fa-newspaper-o"></i> News</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle menu_text_color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i>
-								Services
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link menu_text_color" href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-						</li>
-					</ul>
-					<!-- <form class="form-inline my-2 my-lg-0">
-							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-					</form> -->
-				</div>
-			</div>
-		</nav>
+<!doctype html>
+<html lang="zxx">
 
-		<!-- Responsive Slider part -->
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li><li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-			
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="images/slider_one.jpg" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="images/slider_two.jpg" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="images/slider_three.jpg" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="images/slider_four.jpg" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="images/slider_five.jpg" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="images/slider_six.jpg" class="d-block w-100" alt="...">
-				</div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>
+        Minhazul Min | Portfolio
+    </title>
+    <meta name="description" content="I'm Minhazul Islam Min and I'm a Front-End Developer. I have three years of industy experiences and have a part of design and development projects for many exceptional companies during thos years. I specialize in standards-based HTML, CSS, Booststrap 4, Java Script and WordPress Web Development.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="css/bootstrap-custom.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400%7CPoppins:300,400,500,600,700%7CRaleway:300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/hamburgers-custom.min.css">
+    <link rel="stylesheet" href="css/lity.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/colors/main-blue.css" id="color-scheme">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="../demo_tool/demo-tool.css">
 
-		<!-- set for animation -->
-		<div data-aos="fade-up" data-aos-duration="2000">
-			<!-- set title of containt -->
-			<div class="container mt-5">
-					<div class="col mt-3">
-						<center>
-							<h2>Welcome to MIN IT E-Learning Services</h2>
-							<p>MIN IT - It is E-Learing web platform and you will learn web Design and Development,Graphic Design,Digital marketing,Etc</p>
-						</center>
-					</div>
-				<hr class="hr">
-			</div>
-		</div>
+</head>
 
-		<!-- set for animation -->
-		<div data-aos="fade-up" data-aos-duration="3000">
-			<!--.services Design...-->
-			<div class="container">
-				<div class="row row-cols-1 row-cols-md-3 g-4">
+<body>
 
+    <div class="preloader">
+        <div class="preloader-section preloader-right">
+        </div>
+        <div class="preloader-section preloader-left">
+        </div>
+        <div class="preloader-icon">
+            <span class="loading-dot loading-dot-1"></span>
+            <span class="loading-dot loading-dot-2"></span>
+            <span class="loading-dot loading-dot-3"></span>
+        </div>
+    </div>
+    <header>
 
-				  	<div class="col-md-3 mt-3">
-					    <div class="card h-100">
-					      <center><img src="images/web_design.jpg" class=" card-img-top image_size" alt="...">
-					      <div class="card-body">
-					        <h5 class="card-title">WEB DESIGN </h5>
-					        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-					      </div></center>
-					    </div>
-					</div>
-
-					<div class="col-md-3 mt-3">
-					    <div class="card h-100">
-					      <center><img src="images/graphic_design.jpg" class="card-img-top image_size rradius" alt="...">
-					      <div class="card-body">
-					        <h5 class="card-title">Graphics Design</h5>
-					        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-					      </div></center>
-					    </div>
-					</div>
-					<div class="col-md-3 mt-3">
-					    <div class="card h-100">
-					      <center><img src="images/seo.png" class="card-img-top image_size rradius" alt="...">
-					      <div class="card-body">
-					        <h5 class="card-title"><center>SEO</center> </h5>
-					        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-					      </div></center>
-					    </div>
-					</div>
-				  	<div class="col-md-3 mt-3">
-				    	<div class="card h-100">
-				      <center><img src="images/digtal.png" class="card-img-top image_size rradius" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">Digital Marketing</h5>
-				        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-				      </div>
-				    	</div></center>
-				  </div>
-				</div>
-			</div>
-		</div>
-
-		<!-- set for animation -->
-		<div data-aos="slide-down" data-aos-duration="3000">
-			<!-- Course Title -->
-			<div class="container mt-6">
-					<div class="col mt-3">
-						<center>
-							<h2>Popular Online Courses</h2>
-						</center>
-					</div>
-				<hr class="hr">
-			</div>
-		</div>	
-
-		<!-- set for animation -->	
-		<div data-aos="fade-up" data-aos-duration="3000">
-			<!-- Course Design -->
-			<div class="container">
-				<div id="myBtnContainer">
-				  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-				  
-				  <button class="btn" onclick="filterSelection('Web_Design_Development')"> Web Design & Development</button>
-				  <button class="btn" onclick="filterSelection('graphic_design')"> Graphic Design</button>
-				  <button class="btn" onclick="filterSelection('Digital_marketing')"> Digital Marketing</button>
-				  <button class="btn" onclick="filterSelection('seo')">SEO</button>
-				  <button class="btn" onclick="filterSelection('Programming')">Programming</button>
-				</div>
-				<hr class="hr">
-				<div class="row row-cols-1 row-cols-md-3 g-4">
-
-					<!-- Web_Design_Development CATEGORY -->
-		  			<div class="column Web_Design_Development">
-		  				<!-- 1st -->
-					    <div class="content">
-					      	<div class="card">
-								<div class="" ><img src="images/lar_vue.jpg" class="course_image" alt=""></div>
-								<div class="card-body">
-									<h3 class=""><a href="">Laravel with Vue.js</a></h3>
-									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
-									<div class=""><p>In this course you will learn about Laravel and Vue.js</p></div>
-								</div>
-								<div class="card-footer">
-									<div class="d-flex flex-row align-items-center justify-content-start">
-										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
-										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
-										<div class=" price ml-auto">Free</div>
-									</div>
-								</div>
-							</div>
-					    </div>
-		  			</div>
-		  			<div class="column Web_Design_Development">
-		  				<!-- 2nd -->
-					    <div class="content">
-					      	<div class="card ">
-								<div class="" ><img src="images/laravel.png" class="course_image" alt=""></div>
-								<div class="card-body">
-									<h3 class=""><a href="">Laravel Basic</a></h3>
-									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
-									<div class=""><p>In this course you will learn about Laravel and Vue.js</p></div>
-								</div>
-								<div class="card-footer">
-									<div class="d-flex flex-row align-items-center justify-content-start">
-										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
-										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
-										<div class=" price ml-auto">Free</div>
-									</div>
-								</div>
-							</div>
-					    </div>
-		  			</div>
-				
-					<!-- graphic_design CATEGORY -->
-					<div class="column graphic_design">
-						<!-- 1ST -->
-					    <div class="content">
-					      <div class="card ">
-								<div class="" ><img src="images/ad_pto.jpg" class="course_image" alt=""></div>
-								<div class="card-body">
-									<h3 class=""><a href="">Adobe Photoshop</a></h3>
-									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
-									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
-								</div>
-								<div class="card-footer">
-									<div class="d-flex flex-row align-items-center justify-content-start">
-										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
-										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
-										<div class=" price ml-auto">Free</div>
-									</div>
-								</div>
-							</div>
-					    </div>
-					</div>
-					<div class="column graphic_design">
-						<!-- 2nd-->
-					    <div class="content">
-					      <div class="card ">
-								<div class="" ><img src="images/ai.jpeg" class="course_image" alt=""></div>
-								<div class="card-body">
-									<h3 class=""><a href="">Adobe illustrator</a></h3>
-									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
-									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
-								</div>
-								<div class="card-footer">
-									<div class="d-flex flex-row align-items-center justify-content-start">
-										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
-										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
-										<div class=" price ml-auto">Free</div>
-									</div>
-								</div>
-							</div>
-					    </div>
-					</div>
-					 
-					<!-- Digital_marketing category -->
-					<div class="column Digital_marketing">
-						<!-- 1st -->
-					    <div class="content">
-					     <div class="card ">
-								<div class="" ><img src="images/dig_market.png" class="course_image" alt=""></div>
-								<div class="card-body">
-									<h3 class=""><a href="">Software Training</a></h3>
-									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
-									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
-								</div>
-								<div class="card-footer">
-									<div class="d-flex flex-row align-items-center justify-content-start">
-										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
-										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
-										<div class=" price ml-auto">Free</div>
-									</div>
-								</div>
-							</div>
-					    </div>
-					</div>
-					<div class="column Digital_marketing">
-						<!-- 2nd -->
-					    <div class="content">
-					     <div class="card">
-								<div class="" ><img src="images/dig_market2.jpg" class="course_image" alt=""></div>
-								<div class="card-body">
-									<h3 class=""><a href="">Software Training</a></h3>
-									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
-									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
-								</div>
-								<div class="card-footer">
-									<div class="d-flex flex-row align-items-center justify-content-start">
-										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
-										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
-										<div class=" price ml-auto">Free</div>
-									</div>
-								</div>
-							</div>
-					    </div>
-					</div>
-
-					<!-- SEO category -->
-					<div class="column seo">
-						<!-- 1st -->
-					    <div class="content">
-					     <div class="card">
-								<div class="" ><img src="images/seo.png" class="course_image" alt=""></div>
-								<div class="card-body">
-									<h3 class=""><a href="">Software Training</a></h3>
-									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
-									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
-								</div>
-								<div class="card-footer">
-									<div class="d-flex flex-row align-items-center justify-content-start">
-										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
-										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
-										<div class=" price ml-auto">Free</div>
-									</div>
-								</div>
-							</div>
-					    </div>
-					</div>
-					<div class="column seo">
-						<!-- 2nd -->
-					    <div class="content">
-					     <div class="card">
-								<div class="" ><img src="images/seo2.jpg" class="course_image" alt=""></div>
-								<div class="card-body">
-									<h3 class=""><a href="">Software Training</a></h3>
-									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
-									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
-								</div>
-								<div class="card-footer">
-									<div class="d-flex flex-row align-items-center justify-content-start">
-										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
-										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
-										<div class=" price ml-auto">Free</div>
-									</div>
-								</div>
-							</div>
-					    </div>
-					</div>
-
-					<!-- Programming category -->
-					<div class="column Programming">
-						<!-- 1st -->
-					    <div class="content">
-					     <div class="card ">
-								<div class="" ><img src="images/c.jpg" class="course_image" alt=""></div>
-								<div class="card-body">
-									<h3 class=""><a href="">Software Training</a></h3>
-									<div class=""><span>Course instructor</span> - Minhazul Islam</div>
-									<div class=""><p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p></div>
-								</div>
-								<div class="card-footer">
-									<div class="d-flex flex-row align-items-center justify-content-start">
-										<div class=""><i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i><span>20 Student</span></div>
-										<div class="ml-3"><i class="fa fa-star icon_color" aria-hidden="true"></i><span>5 Ratings</span></div>
-										<div class=" price ml-auto">Free</div>
-									</div>
-								</div>
-							</div>
-					    </div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-
-		<!-- set for animation -->
-		<div data-aos="slide-down" data-aos-duration="3000">
-			<!-- Latest News Title -->
-			<div class="container mt-6">
-					<div class="col mt-3">
-						<center>
-							<h2>Latest News</h2>
-							<p>Policy analysts generally agree on a need for reform, but not on which path policymakers should take.</p>
-						</center>
-					</div>
-				<hr class="hr">
-			</div>
-		</div>
-
-
-		<!-- set for animation -->
-		<div data-aos="slide-up" data-aos-duration="3000">
-		<!-- Latest News -->
-
-			<div class="container">
-				
-				<div class="row">
-					<div class="col-md-7 ">
-						
-						<!-- News Post Large -->
-							<div class="">
-								<img src="images/lar_vue.jpg" class="course_image post_image" alt=""></div>
-								<div class="post_title"><a href="blog_single.html">Here’s What You Need to Know About Online Testing for the ACT and SAT</a></div>
-								<div class="p_admin_date">
-									<ul>
-										<li><a href="#">admin</a></li> 
-										<li><a href="#" class="ml-3 mr-3">|</a></li> 
-										<li><a href="#">november 11, 2021</a></li>
-									</ul>
-								</div>
-								<div class="description">
-									<p>Policy analysts generally agree on a need for reform, but not on which path policymakers should take. Can America learn anything from other nations...</p>
-								</div>
-								<div class="readmore"><a href="">Read more</a></div>
-					</div>
-
-					<div class="col-md-5">
-
-							<!-- News Posts Small -->
-							<div class="">
-								<div class="post_small_title"><a href="blog_single.html">Home-based business insurance issue (Spring 2020 - 2021)</a></div>
-								<div class="p_admin_date">
-									<ul>
-										<li><a href="#">admin</a></li>
-										<li><a href="#" class="ml-3 mr-3">|</a></li>
-										<li><a href="#">november 11, 2021</a></li>
-									</ul>
-								</div>
-							</div><hr>
-
-							<!-- News Posts Small -->
-							<div class="">
-								<div class="post_small_title"><a href="blog_single.html">2018 Fall Issue: Credit Card Comparison Site Survey (Summer 2018)</a></div>
-								<div class="p_admin_date">
-									<ul>
-										<li><a href="#">admin</a></li>
-										<li><a href="#" class="ml-3 mr-3">|</a></li>
-										<li><a href="#">november 11, 2021</a></li>
-									</ul>
-								</div>
-							</div><hr>
-
-							<!-- News Posts Small -->
-							<div class="">
-								<div class="post_small_title"><a href="blog_single.html">Cuentas de cheques gratuitas una encuesta de Consumer Action</a></div>
-								<div class="p_admin_date">
-									<ul>
-										<li><a href="#">admin</a></li>
-										<li><a href="#" class="ml-3 mr-3">|</a></li>
-										<li><a href="#">november 11, 2021</a></li>
-									</ul>
-								</div>
-							</div><hr>
-
-							<!-- News Posts Small -->
-							<div class="">
-								<div class="post_small_title"><a href="blog_single.html">Troubled borrowers have fewer repayment or forgiveness options</a></div>
-								<div class="p_admin_date">
-									<ul>
-										<li><a href="#">admin</a></li>
-										<li><a href="#" class="ml-3 mr-3">|</a></li>
-										<li><a href="#">november 11, 2021</a></li>
-									</ul>
-								</div>
-							</div>			
-					</div>
-				</div>
-			</div>
-	
-		</div>
-
-
-		<!-- Best Tutor profile title -->
-		<div class="container mt-6">
-				<div class="col mt-3">
-					<center>
-						<h2>The Best Tutors in our Institute</h2>
-					</center>
-				</div>
-			<hr class="hr">
-		</div>
-		<!-- Best Tutor profile List -->
-		<div class="container">
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col-md-3">
-					<center>
-					<div class="card">
-						<center><img src="images/min.jpg" class=" image_size rradius"></center>
-						  <h4 class="mt-3">Minhazul Islam</h4>
-						  <p>CEO & Founder</p>
-						  <p>MIN IT SERVICES</p>
-						  <div style="margin: 24px 0;">
-						    <a href="#"><i class="fa fa-dribbble"></i></a> 
-						    <a href="#"><i class="fa fa-twitter"></i></a>  
-						    <a href="#"><i class="fa fa-linkedin"></i></a>  
-						    <a href="#"><i class="fa fa-facebook"></i></a> 
-						  </div>
-						  <button class=" form-control btn btn-info">Contact</button>
-					</div></center>
-				</div>
-				<div class="col-md-3">
-					<center>
-					<div class="card">
-						<center><img src="images/profile-2.jpg" class=" image_size rradius"></center>
-						  <h4 class="mt-3">Ana Islam</h4>
-						  <p>CEO & Founder</p>
-						  <p>MIN IT SERVICES</p>
-						  <div style="margin: 24px 0;">
-						    <a href="#"><i class="fa fa-dribbble"></i></a> 
-						    <a href="#"><i class="fa fa-twitter"></i></a>  
-						    <a href="#"><i class="fa fa-linkedin"></i></a>  
-						    <a href="#"><i class="fa fa-facebook"></i></a> 
-						  </div>
-						  <button class=" form-control btn btn-info">Contact</button>
-					</div></center>
-				</div>
-				<div class="col-md-3">
-					<center>
-					<div class="card">
-						<center><img src="images/profile-3.jpg" class=" image_size rradius"></center>
-						  <h4 class="mt-3">Bornoma </h4>
-						  <p>CEO & Founder</p>
-						  <p>MIN IT SERVICES</p>
-						  <div style="margin: 24px 0;">
-						    <a href="#"><i class="fa fa-dribbble"></i></a> 
-						    <a href="#"><i class="fa fa-twitter"></i></a>  
-						    <a href="#"><i class="fa fa-linkedin"></i></a>  
-						    <a href="#"><i class="fa fa-facebook"></i></a> 
-						  </div>
-						  <button class=" form-control btn btn-info">Contact</button>
-					</div></center>
-				</div>
-				<div class="col-md-3">
-					<center>
-					<div class="card">
-						<center><img src="images/profile-4.png" class=" image_size rradius"></center>
-						  <h4 class="mt-3">Sara Islam</h4>
-						  <p>CEO & Founder</p>
-						  <p>MIN IT SERVICES</p>
-						  <div style="margin: 24px 0;">
-						    <a href="#"><i class="fa fa-dribbble"></i></a> 
-						    <a href="#"><i class="fa fa-twitter"></i></a>  
-						    <a href="#"><i class="fa fa-linkedin"></i></a>  
-						    <a href="#"><i class="fa fa-facebook"></i></a> 
-						  </div>
-						  <button class=" form-control btn btn-info">Contact</button>
-					</div></center>
-				</div>
-			</div>
-		</div>
-
-
-
-		<!-- footer Design -->
-		 <hr />
-        <footer class="bg_menu ">
-                <div class="container mshadow">
-                	<div class="row">
-                		<div class="col-md-3 padding">
-                			<h5>Usefull Link</h5>
-                			<hr style="border-color: #fff;">
-                            <h6>Paid Course</h6>
-                            <h6>Affiliate Program </h6>
-                            <h6>Tutorials</h6>
-                            <h6>Sponsorship </h6>
-                            <h6> Our Team</h6>
-                		</div>
-                		<div class="col-md-3 padding">
-                			<h5 >Services</h5>
-                			<hr style="border-color: #fff;">
-                            <h6>Web Design and Development</h6>
-                            <h6>Graphic Design</h6>
-                            <h6>Digital Marketing </h6>
-                            <h6>UI/UX Design</h6>
-                            <h6>SEO</h6>
-                		</div>
-                		<div class="col-md-3 padding">
-                			<h5>Contact Us</h5>
-                			<hr style="border-color: #fff;">
-                            <h6>MIN IT </h6>
-                            <h6>CEO, Founder & Director</h6>
-                            <h6>MD.MINHAZUL ISLAM MIN </h6>
-                            <h6>🌎 minhazul234@gmail.com</h6>
-                            <h6>📞 +8801751337061</h6>
-                		</div>
-                		<div class="col-md-3 padding">
-                			<center>
-                				<h5>Join With Us</h5>
-                				<hr style="border-color: #fff;">
-		                		<div class="mt-3">
-					 				<a href="#" class="fa fa-facebook socal mshadow"></a>
-									<a href="#" class="fa fa-twitter socal mshadow"></a>
-									<a href="#" class="fa fa-linkedin socal mshadow"></a>
-									<a href="#" class="fa fa-youtube socal mshadow"></a>
-									<a href="#" class="fa fa-instagram socal mshadow"></a>
-				 				</div>
-			 				</center>
-			 				<div class="mt-3">
-			 					<input type="email" class="form-control" style="width: 65%;float: left;" name="email" required>
-                					<button class="btn btn-success" style="width: 35%;">Subscribe</button>
-			 				</div>
-                		</div>
-                	</div>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" data-scroll href="#header-area">Minhazul Min</a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="nav-btn">Menu</span>
+                </button>
+                <div class="d-flex flex-row  order-0 order-lg-1">
+                    <div class="navbar-nav flex-row">
+                        <button id="navBtn" class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
                 </div>
-                <div class="">
-					<p>
-				       <center>Copyright &copy; 2017 - 2021 By<i class="fa fa-heart red ml-2"></i> MIN IT<i class="fa fa-heart red ml-2"></i> All Rights Reserved</center>
-				    </p>
-				</div>
-        </footer>
-          
-         <script>
-         	function myloader()
-         	{
-         		setTimeout(function(){ document.getElementById("loader").style.display="none";},4000);
-         	}
-         </script>
-        <script src="js/course.js"></script>
-		<script src="js/jquery-3.5.1.slim.min.js" ></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<!-- aos js for effect or animation  -->
-		<script src="js/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  
-	</body>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse order-1 order-lg-0">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#header-area">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-area">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services-area">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio-area">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials-area">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog-area">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-area">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar" id="sidebar">
+                    <button id="sidebarBtn" class="hamburger hamburger--slider is-active" type="button">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <div class="about-me">
+                        <img class="img-fluid img-thumbnail d-block mx-auto avatar" src="img/min.jpg" alt="About me">
+                        <address>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span>Name</span>
+                                    <p>Minhazul Islam Min</p>
+                                </li>
+                                <li>
+                                    <span>Curriculum Vitae</span>
+                                    <p><a href="#" target="_blank">Download CV</a></p>
+                                </li>
+                                <li>
+                                    <span>Skills</span>
+                                    <p>JavaScript, PHP, HTML/CSS, WordPress, After Effects, Photoshop, Premiere Pro</p>
+                                </li>
+                                <li>
+                                    <span>Email</span>
+                                    <p><a href="mailto:minhaz234@gmail.com">minhaz234@gmail.com</a></p>
+                                </li>
+                                <li>
+                                    <span>Address</span>
+                                    <p>Banasree, Rampura, Dhaka.</p>
+                                </li>
+                                <li>
+                                    <span>Age</span>
+                                    <p>27</p>
+                                </li>
+                                <li>
+                                    <span>Date of Birth</span>
+                                    <p>2 January</p>
+                                </li>
+                                <li>
+                                    <span>Phone</span>
+                                    <p><a href="tel:+8801751337061">+8801751337061</a></p>
+                                </li>
+                                <li>
+                                    <span>Residence</span>
+                                    <p>Bangladesh</p>
+                                </li>
+                                <li>
+                                    <span>Freelance Status</span>
+                                    <p>Available</p>
+                                </li>
+                            </ul>
+                        </address>
+                        <div class="social-medias">
+                            <a href="https://www.twitter.com/" target="_blank">
+                            <i class="icon ion-logo-twitter"></i>
+                        </a>
+                            <a href="https://www.instagram.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-instagram"></i>
+                        </a>
+                            <a href="https://www.linkedin.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-linkedin"></i>
+                        </a>
+                            <a href="https://www.youtube.com/leotechbd" target="_blank">
+                            <i class="icon ion-logo-youtube"></i>
+                        </a>
+                            <a href="https://www.github.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-github"></i>
+                        </a>
+                            <a href="https://www.facebook.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-facebook"></i>
+                        </a>
+                            <a href="https://www.dribbble.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-dribbble"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Header Area (Home) -->
+        <section class="header-area section-fixed-bg section-overlay-bg" id="header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12 col-lg-8 home-content text-center">
+                        <h5 class="greet">Hello, This is <b>Minhazul Islam Min</b></h5>
+                        <h1 class="skills cd-headline clip">I'm a
+                            <span class="cd-words-wrapper single-skill">
+                             <b class="is-visible">Programmer</b>
+                             <b>Web Designer</b>
+                             <b>Web Developer</b>
+                             <b>Freelancer</b>
+                          </span>
+                        </h1>
+                        <p class="description">I am highly motivated software engineer seeking to get a position in a reputed company, where I can use my skills and knowledge to learn new things and grow as a software developer</p>
+                        <a class="btn work" data-scroll href="#portfolio-area" role="button">My Work</a>
+                        <a class="btn hire button-scheme" data-scroll href="#contact-area" role="button">Hire me</a>
+                    </div>
+                    <div class="scroll-icon">
+                        <a data-scroll href="#about-area">
+                            <div class="mouse">
+                                <div class="wheel"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- About Area -->
+    <section class="single-section about-area" id="about-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-5">
+                            <img class="img-fluid img-thumbnail about-img" src="img/about-img.jpg" alt="About Picture">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="content-block">
+                                <h2 class="about-title">About Minhazul Islam</h2>
+                                <h6 class="about-role">Programmer and Freelancer</h6>
+                                <p class="about-description">I am a Programmer, web designer, web developer and freelance based in Bangladesh and all over the world.</p>
+                                <p class="about-description last">I have been building noteworthy software and websites for four years. For this time I've done all types of projects, Like University Management System,Tour Management System, E-commerce Management System, Personal Website, Healthcare Website,Shop and Beauty Website, Corporate Website etc. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster. If you're interested in working with me, don't hesitate to hire me.</p>
+                                <address>
+                                    <ul class="list-inline about-info">
+                                        <li class="list-inline-item">
+                                            <span>Name:</span>
+                                            <p>Minhazul Islam Min</p>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>Email:</span>
+                                            <p><a href="mailto:minhazul234@gmail.com">minhazul234@gmail.com</a></p>
+                                        </li>
+                                        <li class="list-inline-item mb-0">
+                                            <span>Age:</span>
+                                            <p>27</p>
+                                        </li>
+                                        <li class="list-inline-item mb-0">
+                                            <span>From:</span>
+                                            <p>Banasree, Rampura, Dhaka.</p>
+                                        </li>
+                                    </ul>
+                                </address>
+                                <a class="btn button-scheme" href="javascript:void(0)" target="_blank" role="button">Download CV</a>
+                                <button type="button" class="btn button-outline details">More Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Area -->
+    <section class="single-section silver-bg services-area" id="services-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2 class="section-title">Services</h2>
+                        <p class="section-description">Few of the services we provided</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <img src="img/website-design.jpg" class="img-h-w" alt="Website Design">
+                        <!-- <i class="icon ion-md-color-palette"></i> -->
+                        <div class="service-body">
+                            <h6 class="service-title">Website Design</h6>
+                            <p class="service-description">We design your desired website according to your need. We use HTML, CSS, JavaScript, PHP, WordPress and OpenCart.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <img src="img/web_development.jpg" class="img-h-w" alt="Website Design">
+                        <!-- <i class="icon ion-md-code"></i> -->
+                        <div class="service-body">
+                            <h6 class="service-title">Website Development</h6>
+                            <p class="service-description">We develop your dreem website according to your requirements.We use HTML,CSS,JavaScript,PHP,WordPress,OpenCart.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <!-- <i class="icon ion-ios-construct"></i> -->
+                        <img src="img/graphic-design.jpg" class="img-h-w" alt="Website Design">
+                        <div class="service-body">
+                            <h6 class="service-title">Graphic Design</h6>
+                            <p class="service-description">We provide website maintenance supports any time from anywhere. Our dedicated team maintenance your site.</p>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    <!-- Hire Area -->
+    <section class="single-section section-fixed-bg section-overlay-bg hire-area" id="hire-area">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="hire-title">Let's Work Together!</h1>
+                    <p class="hire-description">I am available for freelance projects. Hire me and get your project done.</p>
+                    <a class="btn hire" data-scroll href="#contact-area" role="button">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Area -->
+    <section class="single-section portfolio-area" id="portfolio-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2 class="section-title">Portfolio</h2>
+                        <p class="section-description">Check out my previous work</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 p-0">
+                    <ul class="list-inline filter-control d-flex justify-content-center" role="group" aria-label="Filter Control">
+                        <h6><p>Recent Work</p></h6>
+                        <br>
+                    </br>
+                    </ul>
+                    <div class="shufflejs" id="shufflejs">
+                        <div class="js-item col-6 col-lg-4" data-groups='["design"]'>
+                            <div class="item-overlay">
+                                <img class="img-fluid" alt="Item" src="img/nasaapps.PNG">
+                                <div class="overlay-content">
+                                    <h6 class="overlay-title">Nasa Apps Challenge</h6>
+                                    <div class="overlay-icons">
+                                        <a class="popup-item" href="img/nasaapps.PNG" data-lity>
+                                        <i class="icon ion-md-eye"></i>
+                                    </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-item col-6 col-lg-4" data-groups='["photos"]'>
+                            <div class="item-overlay">
+                                <img class="img-fluid" alt="Item" src="img/tour.PNG">
+                                <div class="overlay-content">
+                                    <h6 class="overlay-title">Tour Management System</h6>
+                                    <div class="overlay-icons">
+                                        <a class="popup-item" href="img/tour.PNG" data-lity>
+                                        <i class="icon ion-md-eye"></i>
+                                    </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-item col-6 col-lg-4" data-groups='["design"]'>
+                            <div class="item-overlay">
+                                <img class="img-fluid" alt="Item" src="img/ideb.PNG">
+                                <div class="overlay-content">
+                                    <h6 class="overlay-title">Diploma Engineers (IDEB).</h6>
+                                    <div class="overlay-icons">
+                                        <a class="popup-item" href="img/ideb.PNG" data-lity>
+                                        <i class="icon ion-md-eye"></i>
+                                    </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-item col-6 col-lg-4 mb-lg-0" data-groups='["brand"]'>
+                            <div class="item-overlay">
+                                <img class="img-fluid" alt="Item" src="img/npiub.PNG">
+                                <div class="overlay-content">
+                                    <h6 class="overlay-title">NPIUB University</h6>
+                                    <div class="overlay-icons">
+                                        <a class="popup-item" href="img/npiub.PNG" data-lity>
+                                        <i class="icon ion-md-eye"></i>
+                                    </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-item col-6 mb-0 col-lg-4 mb-lg-0" data-groups='["brand"]'>
+                            <div class="item-overlay">
+                                <img class="img-fluid" alt="Item" src="img/ideb.PNG">
+                                <div class="overlay-content">
+                                    <h6 class="overlay-title">PiyaSha</h6>
+                                    <div class="overlay-icons">
+                                        <a class="popup-item" href="img/ideb.PNG" data-lity>
+                                        <i class="icon ion-md-eye"></i>
+                                    </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-item col-6 mb-0 col-lg-4 mb-lg-0" data-groups='["photos"]'>
+                            <div class="item-overlay">
+                                <img class="img-fluid" alt="Item" src="img/nasaapps.PNG">
+                                <div class="overlay-content">
+                                    <h6 class="overlay-title">Five Star Stransfort</h6>
+                                    <div class="overlay-icons">
+                                        <a class="popup-item" href="img/nasaapps.PNG" data-lity>
+                                        <i class="icon ion-md-eye"></i>
+                                    </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 sizer-element"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Area -->
+    <section class="single-section section-fixed-bg section-overlay-bg testimonials-area" id="testimonials-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading only-title">
+                        <h2 class="section-title">Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="owl-carousel owl-theme">
+                    <div class="col-12 col-md-8 offset-md-2">
+                        <div class="single-review text-center">
+                            <i class="icon ion-md-quote quote-icon"></i>
+                            <p class="client-review">Minhaz is a professional software developer. His dedication and continuous support for the clients made him one of the most promising designer I have ever acquainted with.</p>
+                            <div class="flex-row client-details">
+                                <div class="media justify-content-center">
+                                    <img src="img/next-venture.jpg" alt="Client" class="img-fluid rounded-circle client-avatar">
+                                    <div class="align-self-center">
+                                        <h6 class="client-name">Abdullah Jayed</h6>
+                                        <span class="client-role">Founder, Next Ventures</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 offset-md-2">
+                        <div class="single-review text-center">
+                            <i class="icon ion-md-quote quote-icon"></i>
+                            <p class="client-review">"I just have reviews about everything he does, and it's all done very cost-effectively. Leon give me a very good support to complete my work obviously within the delivery period. I really appreciate his work and wish to work with him again in the future.</p>
+                            <div class="flex-row client-details">
+                                <div class="media justify-content-center">
+                                    <img src="img/wedevs-logo.png" alt="Client" class="img-fluid rounded-circle client-avatar">
+                                    <div class="align-self-center">
+                                        <h6 class="client-name">Tareq Hasan</h6>
+                                        <span class="client-role">Founder, weDevs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 offset-md-2">
+                        <div class="single-review text-center">
+                            <i class="icon ion-md-quote quote-icon"></i>
+                            <p class="client-review">It has been a real pleasure working with Riajul. He has been very professional and very clear in all communications, which I appreciate. He’s knowledgeable and up to date.</p>
+                            <div class="flex-row client-details">
+                                <div class="media justify-content-center">
+                                    <img src="img/brain-station.jpg" alt="Client" class="img-fluid rounded-circle client-avatar">
+                                    <div class="align-self-center">
+                                        <h6 class="client-name">Raisul Kabir</h6>
+                                        <span class="client-role">Co-founder, Brainstation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Team Area -->
+    <section class="single-section blog-area" id="blog-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2 class="section-title">Team Member</h2>
+                        <p class="section-description">One spirit, One Team, One Win</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <img src="img/min.jpg">
+                            <div class="team-content">
+                                <h3 class="title">Minhazul Islam</h3>
+                                <span class="post">Programmer</span>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/minhazulmin"target="_blank"><i class="icon ion-logo-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/minhazulmin"target="_blank"><i class="icon ion-logo-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/minhazulmin"target="_blank"><i class="icon ion-logo-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <img src="img/oshit.jpg">
+                            <div class="team-content">
+                                <h3 class="title">Oahit Sutrodhar</h3>
+                                <span class="post">Programmer</span>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/"target="_blank"><i class="icon ion-logo-facebook"></i></a></li>
+                                    <li><a href="https://www.twitter.com/"target="_blank"><i class="icon ion-logo-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/"target="_blank"><i class="icon ion-logo-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <img src="img/shadhin.jpg">
+                            <div class="team-content">
+                                <h4 class="title">Abu Hasan Shadhin</h4>
+                                <span class="post"> Programmer</span>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/"target="_blank"><i class="icon ion-logo-facebook"></i></a></li>
+                                    <li><a href="https://www.twitter.com"target="_blank"><i class="icon ion-logo-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com"target="_blank"><i class="icon ion-logo-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <img src="img/tusher.jpg">
+                            <div class="team-content">
+                                <h3 class="title">Tusher Ahamed</h3>
+                                <span class="post">Programmer</span>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com"target="_blank"><i class="icon ion-logo-facebook"></i></a></li>
+                                    <li><a href="https://www.twitter.com"target="_blank"><i class="icon ion-logo-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com"target="_blank"><i class="icon ion-logo-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Area -->
+    <section class="single-section contact-area silver-bg" id="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="section-description">Here you can find me. I'd like to hear from you all. You can contact me and ask me about anything.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <form class="contact-form" id="contact-form" method="post" action="https://exill.tn/demo/flexi_html/template/php/contact.php">
+                        <h4 class="form-title">Message Me</h4>
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="contact-name" placeholder="Name" required>
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <input type="email" name="email" class="form-control" id="contact-email" placeholder="Email" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12 form-group custom-margin">
+                                <textarea name="message" class="form-control" id="contact-message" placeholder="Message" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn button-scheme" id="contact-submit">Submit</button>
+                                <p class="feedback-error">Oops! Something went wrong. Please try again.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="contact-info">
+                        <h4 class="info-title">Contact Info</h4>
+                        <p class="info-description">Always available for freelance work if the right project comes along, Feel free to contact me!</p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="media align-items-center">
+                                    <span class="info-icon">
+                                    <i class="icon ion-md-map"></i>
+                                </span>
+                                    <div class="media-body">
+                                        <h6 class="info-type">Location</h6>
+                                        <span class="info-details">Banasree, Rampura, Dhaka, Bangladesh.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media align-items-center">
+                                    <span class="info-icon">
+                                    <i class="icon ion-md-call"></i>
+                                </span>
+                                    <div class="media-body">
+                                        <h6 class="info-type">Call Me</h6>
+                                        <span class="info-details"><a href="tel:+8801751337061">+8801751337061</a></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media align-items-center">
+                                    <span class="info-icon">
+                                    <i class="icon ion-md-mail-unread"></i>
+                                </span>
+                                    <div class="media-body">
+                                        <h6 class="info-type">Email Me</h6>
+                                        <span class="info-details"><a href="mailto:minhazul234@gmail.com">minhazul234@gmail.com</a></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Area -->
+    <footer class="footer-area single-section">
+        <div class="container">
+            <div class="row main-footer">
+                <div class="col-12 col-md-3">
+                    <h5 class="column-title">About</h5>
+                    <ul class="list-unstyled column-content">
+                        <li><a data-scroll href="#header-area">Home</a></li>
+                        <li><a data-scroll href="#services-area">Services</a></li>
+                        <li><a data-scroll href="#portfolio-area">Portfolio</a></li>
+                        <li><a data-scroll href="#blog-area">Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="column-title">Information</h5>
+                    <ul class="list-unstyled column-content">
+                        <li><a href="#0">Terms & Condition</a></li>
+                        <li><a href="#0">Privacy Policy</a></li>
+                        <li><a href="#0">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="column-title">Support</h5>
+                    <ul class="list-unstyled column-content">
+                        <li><a href="#0">Contact Us</a></li>
+                        <li><a href="#0">FAQs</a></li>
+                        <li><a href="#0">Report an issue</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h3 class="brand-logo">Riajul Islam</h3>
+                    <p class="brand-description">I am a freelancer based in Bangladesh and i have been building noteworthy websites for years.</p>
+                </div>
+            </div>
+            <div class="row mini-footer">
+                <div class="col-12">
+                    <div class="social-medias">
+                        <a class="twitter" href="https://www.twitter.com/" target="_blank">
+                            <i class="icon ion-logo-twitter"></i>
+                        </a>
+                        <a class="instagram" href="https://www.instagram.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-instagram"></i>
+                        </a>
+                        <a class="linkedin" href="https://www.linkedin.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-linkedin"></i>
+                        </a>
+                        <a class="youtube" href="https://www.youtube.com/leotechbd" target="_blank">
+                            <i class="icon ion-logo-youtube"></i>
+                        </a>
+                        <a class="github" href="https://www.github.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-github"></i>
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-facebook"></i>
+                        </a>
+                        <a class="dribbble" href="https://www.dribbble.com/riajulleon" target="_blank">
+                            <i class="icon ion-logo-dribbble"></i>
+                        </a>
+                    </div>
+                    <p class="copyright-notice">Copyright ©2019. All Rights Reserved. Design By <a href="https://www.facebook.com/riajulleon" target="_blank">Minhazul Islam Min</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.nav.min.js"></script>
+    <script src="../../../../cdn.polyfill.io/v2/polyfill.mindee7.js?features=Set,Array.from,Object.assign,Array.prototype.find,Array.prototype.includes"></script>
+    <script src="js/shuffle.min.js"></script>
+    <script src="js/lity.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
