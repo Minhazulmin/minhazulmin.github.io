@@ -183,8 +183,8 @@ a:hover {
 }
 
 .btn.button-scheme {
-    background-color: #007bff !important;
-    border: 1px solid #007bff !important
+    /* background-image: linear-gradient(#9dedff, #ddedb5); */
+    /* border: 1px solid #007bff !important */
 }
 
 .btn.button-scheme:focus {
@@ -233,7 +233,7 @@ a:hover {
 }
 
 .testimonials-area .single-review .quote-icon {
-    color: #007bff
+    color: #fff
 }
 
 .blog-area .card .card-body .post-summary .author-name {

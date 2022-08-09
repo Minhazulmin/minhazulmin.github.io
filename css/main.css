@@ -310,7 +310,7 @@ a:hover {
 .navbar.scrolled.navbar-dark .navbar-nav .nav-link.active,
 .navbar.scrolled.navbar-dark .navbar-nav .nav-link.show,
 .navbar.scrolled.navbar-dark .navbar-nav .show > .nav-link {
-    color: #000
+    color: #007bff
 }
 
 .navbar.scrolled .hamburger-inner,
@@ -784,7 +784,8 @@ a:hover {
 .about-area .about-description.last {
     padding-bottom: 33px;
     border-bottom: 1px solid #f0f0f0;
-    margin-bottom: 0
+    margin-bottom: 0;
+    text-align: justify;
 }
 
 .about-area .about-info {
@@ -793,8 +794,9 @@ a:hover {
 }
 
 .about-area .about-info li {
-    width: 49.6%;
-    margin-bottom: 10px
+    /* width: 49.6%; */
+    margin-bottom: 10px;
+    text-align:justify;
 }
 
 .about-area .about-info li:not(:last-child) {
@@ -1083,7 +1085,7 @@ a:hover {
 }
 
 .testimonials-area {
-    background-image: url(../img/hire-area.jpg);
+    background-image: url(../img/client.jpg);
     padding: 85px 0
 }
 
@@ -1442,7 +1444,7 @@ a:hover {
     border-radius: 50%;
     color: #fff;
     font-size: 14px;
-    line-height: 27px;
+    line-height: 21px;
     margin: 0 3px;
     transition: all .1s ease-in-out
 }
